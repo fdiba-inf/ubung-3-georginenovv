@@ -6,20 +6,20 @@ public class NumberCounter  {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int posCount =0;
-        int negCount = 0;
+        int Positivenumbers =0;
+        int Negativenumbers = 0;
         float sum = 0;
         int number = input.nextInt();
         while (number != 0){
           if(number > 0){
-            posCount++;
-          }else {negCount++;}
+          Positivenumbers  ++;
+          }else {Negativenumbers++;}
           sum += number;
           number =input.nextInt();
         }
-        float average =(sum/(posCount+ negCount));
-        System.out.println("posCount" + posCount);
-        System.out.println("negCount" + negCount);
+        float average =(sum/Positivenumbers+ Negativenumbers);
+        System.out.println("Positive numbers" + Positivenumbers);
+        System.out.println("Negative numbers" + Negativenumbers);
         System.out.println("sum"+ sum );
         System.out.println("average" + average);
     }
